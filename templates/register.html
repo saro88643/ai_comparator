@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Multi AI System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Account</h2>
+
+    <form action="/register" method="POST">
+        <input type="text" name="username" placeholder="Enter Username" required>
+
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p style="text-align:center; margin-top:15px;">
+        Already have an account?
+        <a href="/login">Login here</a>
+    </p>
+</div>
+
+</body>
+</html>

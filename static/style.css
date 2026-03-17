@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #667eea;
+}
+
+.chat-container {
+    width: 70%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.chat-box {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: #111;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #333;
+}
+
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.message.user {
+    background: #2a2a2a;
+    align-self: flex-end;
+}
+
+.message.ai {
+    background: #333;
+}
+
+.input-box {
+    display: flex;
+    padding: 15px;
+    background: #111;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-box button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}

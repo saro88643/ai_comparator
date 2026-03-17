@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Chats</h3>
+        {% for chat in chats %}
+            <div class="chat-item">
+                {{ chat.question [:30]}}
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Main Chat Area -->
+    <div class="chat-area">
+        
+        <div class="messages">
+            {% for chat in chats %}
+                <div class="message user">
+                    {{ chat.question }}
+                </div>
+
+                <div class="message ai">
+                    {{ chat.final_answer | safe }}
+                </div>
+            {% endfor %}
+        </div>
+
+        <form method="POST" class="input-box">
+            <input type="text" name="question" placeholder="Ask something..." required>
+            <button type="submit">Send</button>
+        </form>
+
+    </div>
+
+</div>
+<script>
+document.addEventListener("DOMContentLgit branch -M mainoaded", function() {
+    document.querySelectorAll("pre").forEach(block => {
+        let button = document.createElement("button");
+        button.innerText = "Copy";
+        button.style.float = "right";
+        button.style.marginBottom = "5px";
+        button.style.background = "#444";
+        button.style.color = "white";
+        button.style.border = "none";
+        button.style.padding = "5px 10px";
+        button.style.cursor = "pointer";
+
+        button.onclick = function() {
+            navigator.clipboard.writeText(block.innerText);
+            button.innerText = "Copied!";
+            setTimeout(() => button.innerText = "Copy", 2000);
+        };
+
+        block.prepend(button);
+    });
+});
+</script>
+</body>
+</html>
