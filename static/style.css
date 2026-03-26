@@ -144,3 +144,113 @@ body {
     color: white;
     border-radius: 5px;
 }
+
+/* ================= ONLY CHAT PAGE FIX ================= */
+
+/* Apply only inside chat layout */
+.app-container {
+    display: flex;
+    height: 100vh;
+    background-color: #343541;
+}
+
+/* Sidebar */
+.app-container .sidebar {
+    width: 260px;
+    background-color: #202123;
+    padding: 15px;
+    overflow-y: auto;
+    border-right: 1px solid #2f2f2f;
+}
+
+.app-container .chat-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #2a2b32;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.app-container .chat-item:hover {
+    background: #3a3b45;
+}
+
+/* Chat area */
+.app-container .chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages */
+.app-container .messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* User message */
+.app-container .message.user {
+    background: #444654;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 75%;
+}
+
+/* AI message */
+.app-container .message.ai {
+    background: #2f3136;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 75%;
+}
+
+/* Code blocks only inside chat */
+.app-container pre {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+/* ===== INPUT + BUTTON FIX ===== */
+.app-container .input-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #40414f;
+    border-top: 1px solid #555;
+}
+
+/* Input */
+.app-container .input-box input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #343541;
+    color: white;
+    font-size: 15px;
+}
+
+/* Button */
+.app-container .input-box button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #19c37d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    width: auto; /* FIX */
+}
+
+.app-container .input-box button:hover {
+    background-color: #13a46b;
+}
